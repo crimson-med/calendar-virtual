@@ -1,6 +1,6 @@
 {
   "name": "calendar-virtual",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Create a virtual calendar based on a real time frame (1 real week = 1 year in the virtual calendar).",
   "main": "lib/CalendarVirtual.js",
   "types": "lib/CalendarVirtual.d.ts",
