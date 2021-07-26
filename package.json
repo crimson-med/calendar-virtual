@@ -1,0 +1,48 @@
+{
+  "name": "calendar-virtual",
+  "version": "0.0.1",
+  "description": "Create a virtual calendar based on a real time frame (1 real week = 1 year in the virtual calendar).",
+  "main": "lib/CalendarVirtual.js",
+  "types": "lib/CalendarVirtual.d.ts",
+  "author": "crimson-med <mederic.burlet@gmail.com>",
+  "dependencies": {
+    "date-fns": "^2.23.0"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepare": "yarn build",
+    "prepublishOnly": "yarn test",
+    "version": "git add -A src",
+    "postversion": "git push && git push --tags",
+    "patch": "npm version patch && npm publish",
+    "test": "jest --config jest.json"
+  },
+  "keywords": [
+    "calendar",
+    "date",
+    "time",
+    "virtual",
+    "track",
+    "event"
+  ],
+  "license": "GPL-3.0-only",
+  "devDependencies": {
+    "@types/jest": "^26.0.24",
+    "@types/node": "^16.4.3",
+    "jest": "^27.0.6",
+    "ts-jest": "^27.0.4",
+    "typescript": "^4.3.5"
+  },
+  "private": false,
+  "files": [
+    "lib/**/*"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/crimson-med/calendar-virtual.git"
+  },
+  "bugs": {
+    "url": "https://github.com/crimson-med/calendar-virtual/issues"
+  },
+  "homepage": "https://github.com/crimson-med/calendar-virtual#readme"
+}
